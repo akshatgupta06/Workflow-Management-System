@@ -1,0 +1,245 @@
+/* Dashboard.css */
+.dashboard-container {
+  padding: 20px;
+  background-color: #f8f9fa; /* Example background */
+  min-height: 100vh;
+}
+
+.dashboard-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #555; /* Example color */
+  cursor: pointer;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.dashboard-header-bottom {
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 300px; /* Adjust width as needed */
+  position: relative; /* For positioning the icon */
+}
+
+.search-bar.right-icon input {
+  padding-right: 35px; /* Adjust for icon width */
+}
+
+.search-bar.right-icon .search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 0;
+  color: #777;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.create-button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.create-button.black {
+  background-color: #333; /* Black color */
+}
+
+.plus-icon {
+  margin-right: 5px;
+}
+
+.workflow-list {
+  overflow-x: auto; /* Enable horizontal scrolling for wide tables */
+}
+
+.workflow-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.workflow-table th,
+.workflow-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.workflow-table thead th {
+  font-weight: bold;
+  padding-bottom: 8px; /* Space for the orange line */
+}
+
+.workflow-table thead .header-row {
+  border-bottom: 2px solid orange; /* The orange line */
+}
+
+.workflow-table tbody .actions-cell {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.pin-icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.pin-icon {
+  font-size: 18px; /* Adjust pin icon size */
+  color: #777; /* Default pin color */
+}
+
+.pin-icon.filled {
+  color: gold; /* Yellow when pinned */
+}
+
+.action-button {
+  border-radius: 5px; /* Less rounded */
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  color: #333;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: #eee;
+}
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.more-options {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px; /* Adjust padding for the three dots */
+  font-size: 18px; /* Adjust size of three dots */
+  color: #333;
+}
+
+.more-options:hover {
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-item.delete {
+  color: #dc3545;
+}
+
+.more-actions-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px; /* Adjust padding */
+  font-size: 18px; /* Adjust size if needed */
+  color: black; /* Set color to black */
+}
+
+.more-actions-arrow:hover {
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: flex-end; /* Align pagination to the right */
+  margin-top: 20px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  font-size: 14px;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
